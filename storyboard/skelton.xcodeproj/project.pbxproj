@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EA76AD162475E993009191CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD152475E993009191CD /* AppDelegate.swift */; };
 		EA76AD182475E993009191CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD172475E993009191CD /* SceneDelegate.swift */; };
-		EA76AD1A2475E993009191CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD192475E993009191CD /* ViewController.swift */; };
-		EA76AD1D2475E993009191CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD1B2475E993009191CD /* Main.storyboard */; };
 		EA76AD1F2475E994009191CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD1E2475E994009191CD /* Assets.xcassets */; };
 		EA76AD222475E994009191CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD202475E994009191CD /* LaunchScreen.storyboard */; };
 		EA76AD2D2475E994009191CD /* skeltonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD2C2475E994009191CD /* skeltonTests.swift */; };
+		EA76AD3A2475EB61009191CD /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD392475EB61009191CD /* MainView.storyboard */; };
+		EA76AD3C2475EB78009191CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD3B2475EB78009191CD /* MainViewController.swift */; };
+		EA76AD3F2475EBC2009191CD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD3E2475EBC2009191CD /* NavigationController.swift */; };
+		EA76AD412475EC3F009191CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD402475EC3F009191CD /* ViewController.swift */; };
+		EA76AD432475EC89009191CD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD422475EC89009191CD /* TabBarViewController.swift */; };
+		EA76AD472475ED3C009191CD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD462475ED3C009191CD /* ListViewController.swift */; };
+		EA76AD492475ED48009191CD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD482475ED48009191CD /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +35,19 @@
 		EA76AD122475E993009191CD /* skelton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skelton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA76AD152475E993009191CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA76AD172475E993009191CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA76AD192475E993009191CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA76AD1C2475E993009191CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA76AD1E2475E994009191CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA76AD212475E994009191CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA76AD232475E994009191CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA76AD282475E994009191CD /* skeltonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skeltonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA76AD2C2475E994009191CD /* skeltonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skeltonTests.swift; sourceTree = "<group>"; };
 		EA76AD2E2475E994009191CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA76AD392475EB61009191CD /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		EA76AD3B2475EB78009191CD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EA76AD3E2475EBC2009191CD /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		EA76AD402475EC3F009191CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA76AD422475EC89009191CD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EA76AD462475ED3C009191CD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EA76AD482475ED48009191CD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +89,9 @@
 		EA76AD142475E993009191CD /* skelton */ = {
 			isa = PBXGroup;
 			children = (
+				EA76AD372475EB29009191CD /* View */,
 				EA76AD152475E993009191CD /* AppDelegate.swift */,
 				EA76AD172475E993009191CD /* SceneDelegate.swift */,
-				EA76AD192475E993009191CD /* ViewController.swift */,
-				EA76AD1B2475E993009191CD /* Main.storyboard */,
 				EA76AD1E2475E994009191CD /* Assets.xcassets */,
 				EA76AD202475E994009191CD /* LaunchScreen.storyboard */,
 				EA76AD232475E994009191CD /* Info.plist */,
@@ -97,6 +106,52 @@
 				EA76AD2E2475E994009191CD /* Info.plist */,
 			);
 			path = skeltonTests;
+			sourceTree = "<group>";
+		};
+		EA76AD372475EB29009191CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD3D2475EB8B009191CD /* Common */,
+				EA76AD382475EB39009191CD /* Main */,
+				EA76AD442475ED0B009191CD /* List */,
+				EA76AD452475ED0B009191CD /* Setting */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA76AD382475EB39009191CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD392475EB61009191CD /* MainView.storyboard */,
+				EA76AD3B2475EB78009191CD /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EA76AD3D2475EB8B009191CD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD422475EC89009191CD /* TabBarViewController.swift */,
+				EA76AD3E2475EBC2009191CD /* NavigationController.swift */,
+				EA76AD402475EC3F009191CD /* ViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EA76AD442475ED0B009191CD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD462475ED3C009191CD /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		EA76AD452475ED0B009191CD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD482475ED48009191CD /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +212,7 @@
 				};
 			};
 			buildConfigurationList = EA76AD0D2475E993009191CD /* Build configuration list for PBXProject "skelton" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -182,7 +237,7 @@
 			files = (
 				EA76AD222475E994009191CD /* LaunchScreen.storyboard in Resources */,
 				EA76AD1F2475E994009191CD /* Assets.xcassets in Resources */,
-				EA76AD1D2475E993009191CD /* Main.storyboard in Resources */,
+				EA76AD3A2475EB61009191CD /* MainView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA76AD1A2475E993009191CD /* ViewController.swift in Sources */,
+				EA76AD412475EC3F009191CD /* ViewController.swift in Sources */,
 				EA76AD162475E993009191CD /* AppDelegate.swift in Sources */,
+				EA76AD3F2475EBC2009191CD /* NavigationController.swift in Sources */,
+				EA76AD432475EC89009191CD /* TabBarViewController.swift in Sources */,
+				EA76AD492475ED48009191CD /* SettingViewController.swift in Sources */,
 				EA76AD182475E993009191CD /* SceneDelegate.swift in Sources */,
+				EA76AD472475ED3C009191CD /* ListViewController.swift in Sources */,
+				EA76AD3C2475EB78009191CD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +285,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA76AD1B2475E993009191CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA76AD1C2475E993009191CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA76AD202475E994009191CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
