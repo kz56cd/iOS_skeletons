@@ -15,21 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOW-n0-IWS">
-                                <rect key="frame" x="193" y="437.5" width="28" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i9i-qW-Vdb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Hl-gD-SZH" id="Q06-Wz-VN2"/>
+                                    <outlet property="delegate" destination="2Hl-gD-SZH" id="aBs-Zp-zpP"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="LOW-n0-IWS" firstAttribute="centerX" secondItem="NkS-md-r7C" secondAttribute="centerX" id="Q1r-x4-1dC"/>
-                            <constraint firstItem="LOW-n0-IWS" firstAttribute="centerY" secondItem="NkS-md-r7C" secondAttribute="centerY" id="Ufy-iz-3iQ"/>
+                            <constraint firstItem="oOS-4I-o1z" firstAttribute="bottom" secondItem="i9i-qW-Vdb" secondAttribute="bottom" id="Jmu-YT-zXX"/>
+                            <constraint firstItem="oOS-4I-o1z" firstAttribute="trailing" secondItem="i9i-qW-Vdb" secondAttribute="trailing" id="OZ9-E3-olB"/>
+                            <constraint firstItem="i9i-qW-Vdb" firstAttribute="top" secondItem="oOS-4I-o1z" secondAttribute="top" id="gt5-d6-GXg"/>
+                            <constraint firstItem="i9i-qW-Vdb" firstAttribute="leading" secondItem="oOS-4I-o1z" secondAttribute="leading" id="ic8-WL-AXn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oOS-4I-o1z"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NLv-3q-kF9"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="list.bullet" catalog="system" selectedImage="list.bullet" id="NLv-3q-kF9"/>
+                    <connections>
+                        <outlet property="tableView" destination="i9i-qW-Vdb" id="Cze-iM-fxN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfI-3b-KVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +64,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="exU-L4-IvP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" id="S64-4v-8Dg"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gear" catalog="system" selectedImage="gear" id="S64-4v-8Dg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbE-vM-E7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,4 +89,8 @@
             <point key="canvasLocation" x="-761" y="285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+    </resources>
 </document>

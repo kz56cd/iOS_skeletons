@@ -19,6 +19,8 @@
 		EA76AD432475EC89009191CD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD422475EC89009191CD /* TabBarViewController.swift */; };
 		EA76AD472475ED3C009191CD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD462475ED3C009191CD /* ListViewController.swift */; };
 		EA76AD492475ED48009191CD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD482475ED48009191CD /* SettingViewController.swift */; };
+		EA76AD4B24765F4E009191CD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD4A24765F4E009191CD /* ListCell.swift */; };
+		EA76AD4D24765F69009191CD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD4C24765F69009191CD /* ListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		EA76AD422475EC89009191CD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EA76AD462475ED3C009191CD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EA76AD482475ED48009191CD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EA76AD4A24765F4E009191CD /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		EA76AD4C24765F69009191CD /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				EA76AD462475ED3C009191CD /* ListViewController.swift */,
+				EA76AD4A24765F4E009191CD /* ListCell.swift */,
+				EA76AD4C24765F69009191CD /* ListCell.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA76AD222475E994009191CD /* LaunchScreen.storyboard in Resources */,
+				EA76AD4D24765F69009191CD /* ListCell.xib in Resources */,
 				EA76AD1F2475E994009191CD /* Assets.xcassets in Resources */,
 				EA76AD3A2475EB61009191CD /* MainView.storyboard in Resources */,
 			);
@@ -261,6 +268,7 @@
 				EA76AD432475EC89009191CD /* TabBarViewController.swift in Sources */,
 				EA76AD492475ED48009191CD /* SettingViewController.swift in Sources */,
 				EA76AD182475E993009191CD /* SceneDelegate.swift in Sources */,
+				EA76AD4B24765F4E009191CD /* ListCell.swift in Sources */,
 				EA76AD472475ED3C009191CD /* ListViewController.swift in Sources */,
 				EA76AD3C2475EB78009191CD /* MainViewController.swift in Sources */,
 			);
