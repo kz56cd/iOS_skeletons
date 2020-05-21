@@ -11,19 +11,19 @@ import UIKit
 final class CountViewController: ViewController {
     @IBOutlet private weak var countLabel: UILabel!
     @IBOutlet private weak var statusLabel: UILabel!
-    
+
     private var count: Int = 0 {
         didSet {
             updateCounter()
         }
     }
-    
+
     private var status: CounterStatus = .none {
         didSet {
             updateStatus()
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
@@ -36,7 +36,7 @@ extension CountViewController {
         count += 1
         status = .add
     }
-    
+
     @IBAction func tapSubButton(_ sender: Any) {
         guard count - 1 >= 0 else {
             status = .cannot
@@ -45,7 +45,7 @@ extension CountViewController {
         count -= 1
         status = .sub
     }
-    
+
     @IBAction func tapClearButton(_ sender: Any) {
         count = 0
         status = .clear
@@ -60,11 +60,11 @@ extension CountViewController {
         case clear = "clear counter."
         case cannot = "cannot action."
         case none = "(none)"
-        
+
         var string: String {
             return self.rawValue
         }
-        
+
         var color: UIColor {
             switch self {
             case .cannot:
@@ -74,17 +74,17 @@ extension CountViewController {
             }
         }
     }
-    
+
     private func configureView() {
         parent?.title = "Count"
         updateCounter()
         updateStatus()
     }
-    
+
     private func updateCounter() {
         countLabel.text = "\(count)"
     }
-    
+
     private func updateStatus() {
         statusLabel.text = status.string
         statusLabel.textColor = status.color

@@ -16,7 +16,7 @@ final class ListDetailViewController: ViewController {
 
     @IBOutlet private weak var titleLabel: UILabel!
     private var titleString = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = titleString
