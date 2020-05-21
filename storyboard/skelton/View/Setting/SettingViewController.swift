@@ -21,4 +21,3 @@ extension SettingViewController {
         parent?.title = "Setting"
     }
 }
-

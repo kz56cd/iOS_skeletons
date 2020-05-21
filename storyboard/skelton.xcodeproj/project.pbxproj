@@ -24,6 +24,7 @@
 		EA76AD4F24766386009191CD /* ListDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD4E24766386009191CD /* ListDetailViewController.storyboard */; };
 		EA76AD51247663A2009191CD /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD50247663A2009191CD /* ListDetailViewController.swift */; };
 		EA76AD5424766FC0009191CD /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD5324766FC0009191CD /* CountViewController.swift */; };
+		EA76AD592476BA59009191CD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD582476BA59009191CD /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EA76AD4E24766386009191CD /* ListDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListDetailViewController.storyboard; sourceTree = "<group>"; };
 		EA76AD50247663A2009191CD /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		EA76AD5324766FC0009191CD /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
+		EA76AD582476BA59009191CD /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				EA76AD142475E993009191CD /* skelton */,
 				EA76AD2B2475E994009191CD /* skeltonTests */,
 				EA76AD132475E993009191CD /* Products */,
+				EA76AD582476BA59009191CD /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +190,7 @@
 				EA76AD0E2475E993009191CD /* Sources */,
 				EA76AD0F2475E993009191CD /* Frameworks */,
 				EA76AD102475E993009191CD /* Resources */,
+				EA76AD552476B9E5009191CD /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -258,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA76AD592476BA59009191CD /* .swiftlint.yml in Resources */,
 				EA76AD222475E994009191CD /* LaunchScreen.storyboard in Resources */,
 				EA76AD4D24765F69009191CD /* ListCell.xib in Resources */,
 				EA76AD1F2475E994009191CD /* Assets.xcassets in Resources */,
@@ -274,6 +279,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA76AD552476B9E5009191CD /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA76AD0E2475E993009191CD /* Sources */ = {

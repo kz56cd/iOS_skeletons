@@ -15,7 +15,7 @@ protocol ListCellInput {
 final class ListCell: UITableViewCell {
 
     @IBOutlet private weak var titleLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
