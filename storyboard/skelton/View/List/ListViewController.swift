@@ -21,11 +21,11 @@ final class ListViewController: ViewController {
 // MARK: private
 extension ListViewController {
     private enum CellIdentifier: String {
-        case listCell
+        case listCell = "ListCell"
     }
 
     private enum Segue: String {
-        case listDetail
+        case listDetail = "ListDetail"
     }
 
     private func configureView() {
