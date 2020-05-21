@@ -8,9 +8,17 @@
 
 import UIKit
 
-final class SettingViewController: UIViewController {
+final class SettingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
     }
 }
+
+extension SettingViewController {
+    private func configureView() {
+        parent?.title = "Setting"
+    }
+}
+

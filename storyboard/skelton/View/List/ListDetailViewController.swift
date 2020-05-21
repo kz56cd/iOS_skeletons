@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ListDetailViewController: ViewController {
+protocol ListDetailViewControllerInput {
+    func configure(_ title: String)
+}
 
+final class ListDetailViewController: ViewController {
+
+    @IBOutlet private weak var titleLabel: UILabel!
+    private var titleString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        titleLabel.text = titleString
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ListDetailViewController: ListDetailViewControllerInput {
+    func configure(_ title: String) {
+        titleString = title
     }
-    */
-
 }

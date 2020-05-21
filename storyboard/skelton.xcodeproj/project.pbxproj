@@ -21,6 +21,9 @@
 		EA76AD492475ED48009191CD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD482475ED48009191CD /* SettingViewController.swift */; };
 		EA76AD4B24765F4E009191CD /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD4A24765F4E009191CD /* ListCell.swift */; };
 		EA76AD4D24765F69009191CD /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD4C24765F69009191CD /* ListCell.xib */; };
+		EA76AD4F24766386009191CD /* ListDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA76AD4E24766386009191CD /* ListDetailViewController.storyboard */; };
+		EA76AD51247663A2009191CD /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD50247663A2009191CD /* ListDetailViewController.swift */; };
+		EA76AD5424766FC0009191CD /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76AD5324766FC0009191CD /* CountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		EA76AD482475ED48009191CD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA76AD4A24765F4E009191CD /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		EA76AD4C24765F69009191CD /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		EA76AD4E24766386009191CD /* ListDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListDetailViewController.storyboard; sourceTree = "<group>"; };
+		EA76AD50247663A2009191CD /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		EA76AD5324766FC0009191CD /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		EA76AD372475EB29009191CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA76AD5224766F05009191CD /* Count */,
 				EA76AD3D2475EB8B009191CD /* Common */,
 				EA76AD382475EB39009191CD /* Main */,
 				EA76AD442475ED0B009191CD /* List */,
@@ -148,6 +155,8 @@
 				EA76AD462475ED3C009191CD /* ListViewController.swift */,
 				EA76AD4A24765F4E009191CD /* ListCell.swift */,
 				EA76AD4C24765F69009191CD /* ListCell.xib */,
+				EA76AD4E24766386009191CD /* ListDetailViewController.storyboard */,
+				EA76AD50247663A2009191CD /* ListDetailViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -158,6 +167,14 @@
 				EA76AD482475ED48009191CD /* SettingViewController.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		EA76AD5224766F05009191CD /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				EA76AD5324766FC0009191CD /* CountViewController.swift */,
+			);
+			path = Count;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,7 @@
 				EA76AD4D24765F69009191CD /* ListCell.xib in Resources */,
 				EA76AD1F2475E994009191CD /* Assets.xcassets in Resources */,
 				EA76AD3A2475EB61009191CD /* MainView.storyboard in Resources */,
+				EA76AD4F24766386009191CD /* ListDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA76AD412475EC3F009191CD /* ViewController.swift in Sources */,
+				EA76AD5424766FC0009191CD /* CountViewController.swift in Sources */,
 				EA76AD162475E993009191CD /* AppDelegate.swift in Sources */,
 				EA76AD3F2475EBC2009191CD /* NavigationController.swift in Sources */,
 				EA76AD432475EC89009191CD /* TabBarViewController.swift in Sources */,
@@ -271,6 +290,7 @@
 				EA76AD4B24765F4E009191CD /* ListCell.swift in Sources */,
 				EA76AD472475ED3C009191CD /* ListViewController.swift in Sources */,
 				EA76AD3C2475EB78009191CD /* MainViewController.swift in Sources */,
+				EA76AD51247663A2009191CD /* ListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
