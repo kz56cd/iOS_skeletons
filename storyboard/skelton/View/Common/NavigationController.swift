@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NavigationController.swift
 //  skelton
 //
 //  Created by Masakazu Sano on 2020/05/21.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-
